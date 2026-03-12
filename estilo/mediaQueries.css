@@ -1,0 +1,41 @@
+@media (min-width: 920px) {
+
+    /*Elementos Desaparecem:*/
+    header>#btnVoltar,
+    footer#menuFooter,
+    header>#perfilHeader {
+        display: none;
+    }
+
+    /*Menu lateral aparece:*/
+    main {
+        margin: auto;
+        margin-top: 50px;
+    }
+
+    #perfilMain {
+        font-size: 1.8em;
+    }
+
+    header {
+        width: 60px;
+        height: 95vh;
+        position: fixed;
+    }
+
+    header>div#menuLateral {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .iconeFooter {
+        color: var(--dark-font-color);
+        font-size: var(--font-size-icones);
+        margin-bottom: 30px;
+    }
+
+
+}

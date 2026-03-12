@@ -1,0 +1,273 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    /*Configuração padrão*/
+    --font-size-padrao: 0.9em;
+    --font-size-icones: 2em;
+
+    /*Cores base do tema escuro*/
+    --dark-color: #0c1014;
+    --dark-font-color: whitesmoke;
+    --dark-btn-color: #25292e;
+    --dark-btn-color2: #444c55;
+
+    /*Cores base do tema claro*/
+    --light-color: white;
+    --light-font-color: black;
+}
+
+body {
+    background-color: var(--dark-color);
+    height: 100vh;
+    width: 100vw;
+    color: var(--dark-font-color);
+}
+
+header {
+    margin-top: 0px;
+    height: 30px;
+    padding: 10px;
+    padding-left: 25px;
+
+    display: flex;
+    justify-content: center;
+    color: var(--dark-font-color);
+}
+
+header>#btnVoltar {
+    background-color: var(--dark-color);
+    font-size: var(--font-size-icones);
+    border: 0px;
+    color: var(--dark-font-color);
+
+    flex-basis: 50px;
+    align-self: center;
+}
+
+header>#btnVoltar:hover {
+    cursor: pointer;
+}
+
+header>div#menuLateral {
+    display: none;
+}
+
+header>#perfilHeader {
+    font-size: 1.3em;
+    margin: auto;
+}
+
+main {
+    justify-content: center;
+    margin-top: 30px;
+    max-width: 768px;
+    margin: auto;
+}
+
+main>#cardPerfil {
+    width: 100%;
+    margin-bottom: 35px;
+
+
+    display: flex;
+}
+
+main>section>#infoPerfil {
+    padding: 10px;
+    width: 280px;
+
+    display: flex;
+    flex-flow: row wrap;
+}
+
+main>section>#fotoPerfil {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+    float: left;
+    margin: 0px 10px 0px 10px;
+}
+
+main>section>#fotoPerfil:hover {
+    cursor: pointer;
+}
+
+main>section>div>#perfilMain {
+    margin-bottom: 15px;
+    margin-left: 18px;
+
+    flex-basis: 90%;
+    flex-grow: 1;
+}
+
+main>section>div>#perfilMain:hover {
+    cursor: pointer;
+}
+
+section>#infoPerfil>#dadosPerfil {
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+#dadosPerfil>.perfilItem {
+    margin-left: 20px;
+
+    flex-basis: 30px;
+}
+
+#dadosPerfil>.perfilItem:hover {
+    cursor: pointer;
+}
+
+#dadosPerfil>#posts:hover {
+    cursor: text;
+}
+
+main>#bioPerfil p {
+    font-size: var(--font-size-padrao);
+    width: 100%;
+    margin: 5px;
+    margin-left: 15px;
+}
+
+main>#boxSC {
+    margin-top: 15px;
+    width: 60vw;
+
+    display: flex;
+    align-items: center;
+}
+
+main>#boxSC:hover {
+    cursor: pointer;
+}
+
+main>#boxSC>p {
+    font-size: 0.9em;
+}
+
+section>#seguidorComun {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    flex-basis: 35px;
+}
+
+section>#interacao {
+    margin-top: 35px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+section>#interacao>.btnInt {
+    background-color: #25292e;
+    color: var(--dark-font-color);
+    border: 0px;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 0.9em;
+    margin-right: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 1 45vw;
+}
+
+section>#interacao>.btnInt:hover {
+    background-color: #444c55;
+}
+
+#boxDestaques {
+    padding: 15px;
+    width: 95%;
+    overflow: auto;
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+section>div>.itemDestaque {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px #25292e;
+    border: 3px solid black;
+    margin: 0px 10px;
+
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+section>.story {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+section>.story>p {
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+section>#selecaoConteudo {
+
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.itemConteudo {
+    font-size: var(--font-size-icones);
+}
+
+#publicacoes {
+    padding-top: 5px;
+    width: 100%;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.itemPublicacao {
+    width: calc(100% /3 - 1px);
+    height: 250px;
+}
+
+footer#menuFooter {
+    position: fixed;
+    bottom: 0px;
+    background-color: #0c1014;
+    width: 100%;
+    height: 55px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer#menuFooter>div>.iconeFooter {
+    color: var(--dark-font-color);
+    font-size: var(--font-size-icones);
+}
